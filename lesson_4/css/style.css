@@ -1,0 +1,44 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+
+* {
+	color: green;
+}
+
+p {
+	color: black;
+}
+
+.sub-title {
+	color: blue;
+}
+
+#idcentury > p {
+	color: red;
+}
+
+.list .item-color {
+	color: white;
+}
+
+.page a {
+	color: violet;
+}
+
+#idwar .block-text * {
+	color: blueviolet;
+}
+
+.period .list ~ p {
+	color: lawngreen;
+}
+
+.footer ul + a {
+	color: chocolate;
+}
+
+[class*="__title"] {
+	color: rgb(255, 0, 72);
+}
