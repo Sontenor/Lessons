@@ -67,12 +67,10 @@ body img {
 .benefits__content {
 	display: inline-block;
 	width: 331px;
-	vertical-align: top;
 	font-size: 18px;
 }
 .benefits__image {
 	margin-right: 29px;
-	height: 261px;
 }
 
 .benefits__title {
@@ -131,7 +129,7 @@ body img {
 	max-width: 568px;
 	font-size: 0;
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 }
 
 .image-jewels__block {
