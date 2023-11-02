@@ -265,7 +265,7 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-.card__link {
+.actions__link {
 	display: inline-block;
 	width: 45px;
 	height: 45px;
@@ -274,13 +274,13 @@ body {
 	position: relative;
 	transition: all .3s ease;
 }
-.card__link:not(:last-child) {
+.actions__link:not(:last-child) {
 	margin-right: 13px;
 }
-.card__link:hover {
+.actions__link:hover {
 	opacity: 0.6;
 }
-.card__link img {
+.actions__link img {
 	position: absolute;
 	width: 23px;
 	height: 23px;
