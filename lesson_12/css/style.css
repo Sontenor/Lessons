@@ -1,0 +1,316 @@
+/* @import url("fonts.css"); */
+@import url("https://fonts.googleapis.com/css?family=Inter:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cabin:600&display=swap");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+
+[class*="__container"] {
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+body {
+	font-family: "Inter";
+	font-size: 18px;
+	font-weight: 400;
+	color: #37393F;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+
+/* ======================================================================================================================================================== */
+
+.header {
+	margin-bottom: 100px;
+	position: relative;
+}
+.header__top {
+	background: #37393F;
+	color: #fff;
+	padding: 22px 0;
+	font-size: 14px;
+}
+.left-header {
+	display: inline-block;
+	margin-right: 365px;
+}
+.left-header__adress {
+	background: url('../img/icons/Icon.svg') 0 0 no-repeat;
+	padding-left: 31px;
+	display: inline-block;
+	line-height: 1.7;
+	margin-right: 42px;
+}
+.left-header__mail {
+	background: url('../img/icons/mail.svg')  0 no-repeat;
+	padding-left: 31px;
+	display: inline-block;
+	line-height: 1.7;
+}
+.right-header {
+	display: inline-block;
+}
+.right-header__time {
+	display: inline-block;
+	margin-right: 50px;
+	padding-left: 20px;
+	vertical-align: middle;
+	background: url('../img/icons/time.svg') 0 0 no-repeat;
+	line-height: 1.2;
+}
+.actions-header {
+	display: inline-block;
+}
+.actions-header__item {
+	display: inline-block;
+	transition: all .3s ease;
+}
+.actions-header__item:hover {
+	opacity: 0.7;
+}
+.actions-header__item:not(:last-child) {
+	margin-right: 5px;
+}
+.bottom-header {
+	padding: 30px 0;
+	font-size: 0;
+}
+.bottom-header__logo {
+	display: inline-block;
+	margin-right: 195px;
+	vertical-align: middle;
+}
+.bottom-header__menu {
+	display: inline-block;
+	vertical-align: middle;
+}
+.menu__body {
+	display: inline-block;
+	margin-right: 40px;
+}
+.menu__item {
+	display: inline-block;
+	font-size: 18px;
+	line-height: normal;
+}
+.menu__item--hover:hover .submenu,
+.item-submenu:hover .item-submenu__menu {
+	opacity: 1;
+	visibility: visible;
+}
+.item-submenu {
+	position: relative;
+}
+.menu__item--hover:hover .menu__link--after::after,
+.item-submenu:hover .item-submenu__link--hover::after {
+	transform: rotate(-90deg);
+}
+.menu__item--submenu,
+.item-submenu__menu  {
+	position: absolute;
+	left: 0;
+	top: 100%;
+	opacity: 0;
+	visibility: hidden;
+	min-width: 180px;
+	padding-top: 30px;
+	transition: all .3s ease;
+	z-index: 5;
+}
+.item-submenu__menu {
+	padding-top: 0;
+	padding-left: 30px;
+	left: 150px;
+	top: -15px;
+}
+.menu__item:not(:last-child) {
+	margin-right: 38px;
+}
+.menu__item--hover {
+	position: relative;
+}
+.menu__link:hover,
+.submenu__item:hover,
+.item-submenu__item:hover {
+	text-decoration: underline;
+}
+.menu__link--after::after,
+.item-submenu__link--hover::after {
+	content: '';
+	background: url('../img/icons/Vector.svg') center no-repeat;
+	width: 11px;
+	height: 8px;
+	display: inline-block;
+	transition: all .3s ease;
+	margin-left: 10px;
+}
+.submenu__link--hover {
+	position: relative;
+}
+.submenu__list,
+.item-submenu__list {
+	padding: 15px;
+	background-color: #e4d6d6;
+}
+.submenu__item:not(:last-child),
+.item-submenu__item:not(:last-child) {
+	margin-bottom: 10px;
+}
+.item-submenu::after {
+	left: 5px;
+	height: 9px;
+}
+.menu__button {
+	display: inline-block;
+	background: #6B77E5;
+	color: #FFF;
+   font-family: 'Cabin';
+   line-height: normal;
+   text-transform: capitalize;
+	width: 184px;
+	padding-top: 21px;
+	padding-bottom: 22px;
+	text-align: center;
+	font-size: 18px;
+	transition: all .3s ease;
+}
+.menu__button:hover {
+	background: #535db2;
+}
+
+/* ======================================================================================================================================================== */
+.page {
+	padding-bottom: 100px;
+}
+.team__wrapper {
+	width: 100%;
+	min-height: 800px;
+	position: relative;
+	margin-bottom: 100px;
+}
+.team__block {
+	width: 200px;
+	height: 200px;
+	background-color: #519fd7;
+	color: #185747;
+	border-radius: 25%;
+	position: sticky;
+	top: 0;
+}
+.team__block p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.team__block--right {
+	left: 100%;
+}
+.team__row {
+	font-size: 0;
+}
+.team__row:not(:last-child) {
+	margin-bottom: 31px;
+}
+.team__row .card:not(:last-child) {
+	margin-right: 31px;
+}
+.card {
+	display: inline-block;
+	position: relative;
+	width: 386px;
+	min-height: 532px;
+	overflow: hidden;
+	padding: 22px;
+}
+.card::after {
+	content: '';
+	position: absolute; 
+	top: 532px;
+	left: 0; 
+	width: 100%;
+	height: 100%;
+	background-color: rgba(107, 119, 229, 0.70);
+	transition: all .3s ease;
+}
+.card:hover::after {
+	top: 0;
+}
+.card:hover .card__actions {
+	visibility: visible;
+	opacity: 1;
+}
+.card__image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.card__actions {
+	z-index: 5;
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.card__link {
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	background-color: #40DDB6;
+	position: relative;
+	transition: all .3s ease;
+}
+.card__link:not(:last-child) {
+	margin-right: 13px;
+}
+.card__link:hover {
+	opacity: 0.6;
+}
+.card__link img {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.card__body {
+	position: absolute;
+	bottom: 22px;
+	z-index: 2;
+	background-color: #fff;
+	padding: 26px 47px;
+	text-align: center;
+	min-width: 341px;
+}
+.card__title {
+	font-family: 'Poppins';
+   font-size: 25px;
+   line-height: normal;
+	transition: all .3s ease;
+}
+.card__title:hover {
+	color: #848588;
+}
+.card__text {
+	color: #7D7D7D;
+	font-size: 18px;
+	line-height: 1.35;
+}
+
+
+/* ======================================================================================================================================================== */
