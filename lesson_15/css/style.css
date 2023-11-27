@@ -45,6 +45,7 @@ body {
 	align-items: center;
 	flex: 1 1 auto;
 	justify-content: space-between;
+	gap: 164px;
 }
 .header__logo {
 	width: 91px;
@@ -60,6 +61,11 @@ body {
 	object-fit: cover;
 }
 .form-header {
+	display: flex;
+	justify-content: space-between;
+	flex:  1 1 auto;
+}
+.form-header__line {
 	border-radius: 8px;
 	background: #F6F6F6;
 	padding: 12px 48px;
